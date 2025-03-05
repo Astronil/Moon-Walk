@@ -1,6 +1,8 @@
-Moon Walk 🚀🌕
+# Moon Walk 🚀🌕
 
-Live Demo: Moon Walk
+[![Moon Walk Preview](images/moon-walk-preview.png)](https://astronil.github.io/Moon-Walk/)
+
+**Live Demo:** [Moon Walk](https://astronil.github.io/Moon-Walk/)
 
 📌 Overview
 
@@ -30,7 +32,6 @@ Clone the repository:
 
 ```
 git clone https://github.com/astronil/Moon-Walk.git
-
 ```
 
 Open the index.html file in a browser.
