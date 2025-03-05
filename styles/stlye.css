@@ -1,0 +1,465 @@
+/* using style.css as the main css file with mobile first approach  */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    line-height: 1.6;
+  }
+  body{
+    background-image: url(../images/stars.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+  }
+  
+  nav {
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center; 
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 15px;
+    margin-top: 5px;
+    font-size: 16px;
+  }
+  
+  nav ul li a {
+    color: aliceblue;
+  }
+  
+  nav ul li img {
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+
+  .parallax {
+    height: 800px; 
+    background-image: url('../images/moonSurface.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .rocket {
+    position: absolute;
+    width: 100px;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .rocket:hover {
+    transform: translate(-50%, -60%);
+    cursor: pointer;
+  }
+  
+  .initial-Info {
+    margin: 55px 0 55px 0;
+    text-align: center;
+  }
+
+  .initial-Info h1 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 15px;
+  }
+
+  .initial-Info h2 {
+    margin: 0 20px 0 20px;
+    font-size: 13px;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  .initial-Info p {
+    font-size: 10px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .card-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+  }
+  
+  .card {
+    position: relative;
+    margin: 20px;
+    width: 250px;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card h3 {
+    position: absolute;
+    font-size: 16px;
+    bottom: 8px;
+    right: 5px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    opacity: 1;
+    transition: bottom 0.3s ease-in-out;
+  }
+  
+  .card:hover h3 {
+    bottom: 60px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-info {
+    position: absolute;
+
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    transition: bottom 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  .card:hover .card-info {
+    bottom: 40px;
+    opacity: 1;
+  }
+  .services{
+    font-size: 20px;
+  }
+  /* using the flex box for making the section responsive */
+  .info-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .info-box {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  
+  .info-content {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .info-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .info-text {
+    width: 500%;
+    padding: 8px;
+    color: #fff;
+    background-color: black;
+  }
+  
+  .info-text h4 {
+    font-size: 15px;
+    margin-top: 0;
+  }
+  .info-text p {
+    font-size: 10px;
+    margin-top: 0;
+  }
+  .parallax-section {
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .parallax-image {
+    background-image: url('../images/astornautOnMoon.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .services-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+  }
+  
+  .service-card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .service-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .service-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .service-info h3{
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+  }
+  .service-info p {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .service-card:hover .service-info {
+    opacity: 1;
+  }
+/* decorating the review  container section */
+.slideshow-container {
+  background-color:  black;;
+  position: relative;
+  min-height: 500px;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.mySlides {
+  display: none;
+  text-align: center;
+}
+
+.mySlides:first-child {
+  display: block;
+}
+
+.review {
+  color:#ffffff;
+  font-size: 30px;
+  padding: 20px;
+}
+.review p{
+  font-weight: 500;
+  font-size: 30px;
+  padding: 20px;
+}
+.review p:last-child{
+  font-weight: 800;
+}
+
+.stars {
+  color: gold;
+}
+
+.star {
+  font-size: 20px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(44, 42, 42, 0.8);
+}
+/* designing the form now */
+.booking-form {
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.booking-form h2{
+  color: #ffffff;
+  text-align: center;
+  font-size: 25px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+input[type="date"] {
+  width: calc(50% - 5px);
+  padding: 10px; 
+  font-size: 16px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* designing the footer section  */
+.site-footer {
+  background-color: #000000;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-info,
+.footer-links,
+.footer-social {
+  margin-bottom: 20px;
+}
+
+.footer-info h3,
+.footer-links h3,
+.footer-social h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.footer-info p {
+  font-size: 10px;
+}
+.footer-links ul,
+.footer-social ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links li,
+.footer-social li {
+  margin-bottom: 8px;
+}
+
+.footer-links a,
+.footer-social a {
+  font-size: 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  color: #6e6a6a;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 15px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}

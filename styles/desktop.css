@@ -1,0 +1,55 @@
+/* adjusting the page to be fit for desktops  */
+ @media (min-width: 1024px) {
+    /* changing the font sizes*/
+  nav ul li {
+    font-size: 40px;
+  }
+  /* changing the size of image  */
+  nav ul li img {
+    height: 80px;
+  }
+  .rocket {
+    width: 200px;
+  }
+  .card-section {
+    width: 80%;
+  }
+  .initial-Info h1 {
+    font-size: 50px;
+  }
+  .initial-Info h2 {
+    font-size: 30px;
+  }
+  .initial-Info p {
+    font-size: 20px;
+  }
+  .card {
+    width: 350px;
+    height: 400px;
+  }
+  
+  .card h3 {
+    font-size: 20px;
+  }
+  
+  .info-box {
+    width: 60%;
+  }
+  /* changing the margins and paddings  */
+  .info-text {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .info-text h4 {
+    font-size: 35px;
+    margin-top: 0;
+  }
+  .info-text p {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  .service-card {
+    width: 30%;
+  }
+}

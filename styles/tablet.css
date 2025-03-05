@@ -1,0 +1,101 @@
+/* adjusting the page to be fit for tablets  */
+@media (min-width: 768px) {
+  /* changing the font sizes, margins and paddings  */
+  nav ul li {
+    font-size: 20px;
+  }
+  .rocket {
+    width: 150px;
+  }
+  .initial-Info h1 {
+    font-size: 40px;
+  }
+  .initial-Info h2 {
+    font-size: 20px;
+  }
+  .initial-Info p {
+    font-size: 15px;
+  }
+  /* changing the flex direction for a better view  */
+  .card-section {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+    
+  .card {
+    margin: 20px;
+    width: 350px;
+    height: 350px;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+  }
+  
+  .info-box {
+    width: 70%;
+  }
+  
+  .info-text {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .info-text h4 {
+    font-size: 25px;
+    margin-top: 0;
+  }
+  .info-text p {
+
+    font-size: 14px;
+    margin-top: 0;
+  }
+  .service-card {
+    width: 30%;
+  }
+  .slideshow-container {
+    min-height: 100px;
+  }
+  .review {
+    padding: 40px;
+  }
+
+  .stars {
+    font-size: 25px;
+  }
+
+  .prev,
+  .next {
+    font-size: 25px;
+  }
+  .booking-form {
+    max-width: 60%;
+    margin: auto;
+  }
+  .site-footer h3{
+    font-size: 30px;
+  }
+  .site-footer a,
+  .site-footer p{
+    padding: 5px;
+    font-size: 20px;
+  }
+  /* changing the flex-direction here as well */
+  .footer-content {
+    font-size: 15px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer-info,
+  .footer-links,
+  .footer-social {
+    flex: 1 1 250px;
+    margin-bottom: 0;
+  }
+}
+  
+ 
+  
